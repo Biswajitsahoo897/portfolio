@@ -14,10 +14,13 @@ export default function Contact() {
 
           <a
             href={`mailto:${site.email}`}
-            className="mt-8 inline-flex items-center gap-3 font-display text-2xl font-medium text-paper transition-colors hover:text-signal sm:text-3xl"
+            className="group mt-8 inline-flex items-center gap-3 font-display text-2xl font-medium text-paper transition-colors hover:text-signal sm:text-3xl"
           >
-            <Mail size={24} className="text-signal" />
-            {site.email}
+            <Mail size={24} className="text-signal transition-transform duration-300 group-hover:scale-110" />
+            <span className="relative">
+              {site.email}
+              <span className="absolute -bottom-1 left-0 h-px w-0 bg-signal transition-all duration-300 group-hover:w-full" />
+            </span>
           </a>
 
           <div className="mt-10 flex flex-wrap items-center gap-5">
@@ -26,7 +29,7 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
-              className="text-fog transition-colors hover:text-signal"
+              className="text-fog transition-all duration-300 hover:scale-125 hover:text-signal"
             >
               <Github size={20} />
             </a>
@@ -35,7 +38,7 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              className="text-fog transition-colors hover:text-signal"
+              className="text-fog transition-all duration-300 hover:scale-125 hover:text-signal"
             >
               <Linkedin size={20} />
             </a>
@@ -44,7 +47,7 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Twitter / X"
-              className="text-fog transition-colors hover:text-signal"
+              className="text-fog transition-all duration-300 hover:scale-125 hover:text-signal"
             >
               <Twitter size={20} />
             </a>
@@ -52,10 +55,10 @@ export default function Contact() {
             <a
               href={site.resumeUrl}
               download
-              className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.12em] text-fog transition-colors hover:text-signal"
+              className="group inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.12em] text-fog transition-colors hover:text-signal"
             >
               Résumé
-              <ArrowDownToLine size={14} />
+              <ArrowDownToLine size={14} className="transition-transform duration-300 group-hover:translate-y-0.5" />
             </a>
           </div>
         </ScrollReveal>

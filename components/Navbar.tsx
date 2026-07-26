@@ -37,8 +37,9 @@ export default function Navbar() {
         <ul className="hidden md:flex items-center gap-8 font-mono text-xs uppercase tracking-[0.12em] text-fog">
           {links.map((l) => (
             <li key={l.href}>
-              <a href={l.href} className="transition-colors hover:text-paper">
+              <a href={l.href} className="group relative block py-1 transition-colors hover:text-paper">
                 {l.label}
+                <span className="absolute -bottom-0.5 left-0 h-px w-0 bg-signal transition-all duration-300 group-hover:w-full" />
               </a>
             </li>
           ))}
@@ -47,10 +48,12 @@ export default function Navbar() {
         <a
           href={site.resumeUrl}
           download
-          className="hidden md:inline-flex items-center gap-2 rounded-full border border-line px-4 py-2 font-mono text-xs uppercase tracking-[0.12em] text-paper transition-colors hover:border-signal hover:text-signal"
+          className="group hidden md:inline-flex items-center gap-2 overflow-hidden rounded-full border border-line px-4 py-2 font-mono text-xs uppercase tracking-[0.12em] text-paper transition-colors hover:border-signal"
         >
-          Résumé
-          <ArrowDownToLine size={14} />
+          <span className="relative flex items-center gap-2 transition-colors group-hover:text-signal">
+            Résumé
+            <ArrowDownToLine size={14} className="transition-transform duration-300 group-hover:translate-y-0.5" />
+          </span>
         </a>
 
         <button
@@ -70,7 +73,7 @@ export default function Navbar() {
                 <a
                   href={l.href}
                   onClick={() => setOpen(false)}
-                  className="block py-1 transition-colors hover:text-paper"
+                  className="block py-1 transition-colors hover:text-signal"
                 >
                   {l.label}
                 </a>

@@ -6,7 +6,7 @@
 export const site = {
   name: "Biswajit Sahoo",
   role: "Full-Stack Developer",
-  tagline:"From ideas to deployment — building digital experiences that make an impact.",
+  tagline:"From ideas to deployment - building digital experiences that make an impact.",
   location: "Odisha, India",
   email: "theconqueror198@gmail.com",
   github: "https://github.com/biswajitsahoo897",

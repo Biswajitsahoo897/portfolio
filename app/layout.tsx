@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     "Next.js developer",
     "React developer",
     "Node.js",
-    "portfolio",
+    "portfolio biswajit sahoo",
     site.name,
   ],
   authors: [{ name: site.name, url: site.siteUrl }],
@@ -77,7 +77,7 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/favicon.svg",
+    icon: "/favicon.ico",
   },
 };
 
