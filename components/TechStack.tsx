@@ -6,19 +6,19 @@ import ScrollReveal from "./ScrollReveal";
 // Array of technologies with proper labels
 const techStack = [
   { id: "html", label: "HTML" },
-  { id: "css", label: "CSS" },
+  { id: "tailwindcss", label: "Tailwind" },
   { id: "js", label: "JavaScript" },
   { id: "ts", label: "TypeScript" },
   { id: "react", label: "React" },
   { id: "nextjs", label: "Next.js" },
-  { id: "tailwindcss", label: "Tailwind" },
+  { id: "expressjs", label: "Express.js" },
   { id: "nodejs", label: "Node.js" },
-  { id: "mysql", label: "MySQL" },
-  { id: "mongodb", label: "MongoDB" },
   { id: "postgres", label: "PostgreSQL" },
+  { id: "mongodb", label: "MongoDB" },
   { id: "python", label: "Python" },
   { id: "flask", label: "Flask" },
-  { id: "php", label: "PHP" },
+  { id: "docker", label: "Docker" },
+  { id: "postman", label: "Postman" },
   { id: "c", label: "C" },
   { id: "java", label: "Java" },
 ];
@@ -36,7 +36,7 @@ export default function TechStack() {
   };
 
   return (
-    <section id="stack" className="border-t border-line py-20 sm:py-28">
+    <section id="stack" className=" py-20 sm:py-28">
       <div className="container-content">
         <ScrollReveal>
           <p className="eyebrow mb-4">Stack</p>
