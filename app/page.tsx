@@ -7,7 +7,7 @@ import Journey from "@/components/Journey";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Certifications from "@/components/Certification";
-
+import { Analytics } from "@vercel/analytics/next"
 export default function Home() {
   return (
     <>

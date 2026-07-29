@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-
+import { Analytics } from "@vercel/analytics/next"
 import { site } from "@/lib/data";
 import ThreeBackground from "@/components/ThreeBackground";
 
@@ -110,7 +110,9 @@ export default function RootLayout({
       </head>
       <body>
         <ThreeBackground />
-        {children}</body>
+        {children}
+        <Analytics/>
+        </body>
     </html>
   );
 }
