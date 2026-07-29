@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     "Next.js developer",
     "React developer",
     "Node.js",
-    "portfolio biswajit sahoo",
+    "biswajit sahoo portfolio",
     site.name,
   ],
   authors: [{ name: site.name, url: site.siteUrl }],

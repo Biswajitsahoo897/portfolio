@@ -4,7 +4,7 @@ import ScrollReveal from "./ScrollReveal";
 
 export default function Contact() {
   return (
-    <section id="contact" className="border-t border-line py-20 sm:py-28">
+    <section id="contact" className=" py-20 sm:py-28">
       <div className="container-content">
         <ScrollReveal>
           <p className="eyebrow mb-4">Contact</p>

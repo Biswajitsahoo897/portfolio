@@ -5,10 +5,12 @@ import { Menu, X, ArrowDownToLine } from "lucide-react";
 import { site } from "@/lib/data";
 
 const links = [
-  { href: "#work", label: "Work" },
+  {href:"#about", label:"About"},
   { href: "#stack", label: "Stack" },
+  { href: "#work", label: "Work" },
   { href: "#journey", label: "Journey" },
-  { href: "#contact", label: "Contact" },
+  { href:"#certifications", label:"Achievement"},
+  { href: "#contact", label: "Contact" }
 ];
 
 export default function Navbar() {

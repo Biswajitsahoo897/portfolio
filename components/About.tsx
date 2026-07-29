@@ -3,7 +3,8 @@ import ScrollReveal from "./ScrollReveal";
 
 export default function About() {
   return (
-    <section id="about" className="border-t border-line py-20 sm:py-28">
+    <section id="about" className="py-20 sm:py-28"> 
+    {/* removed the border line -> border-t border-line */}
       <div className="container-content">
         <ScrollReveal>
           <div className="group relative overflow-hidden rounded-2xl border border-line bg-surface p-8 transition-all duration-300 hover:-translate-y-1 hover:border-signal/60 hover:shadow-[0_10px_30px_-15px_rgba(95,225,201,0.2)] sm:p-10">

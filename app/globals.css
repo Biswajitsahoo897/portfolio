@@ -12,8 +12,9 @@
   }
 
   body {
-    @apply bg-ink text-paper font-body antialiased;
+    @apply bg-black text-paper font-body antialiased;
   }
+  
   canvas {
     position: fixed;
     inset: 0;
@@ -25,6 +26,7 @@
   body {
     overflow-x: hidden;
   }
+  
   ::selection {
     @apply bg-signal/30 text-paper;
   }
@@ -33,6 +35,13 @@
     outline: 2px solid #5fe1c9;
     outline-offset: 3px;
     border-radius: 2px;
+  }
+}
+
+/* === NEW: Fade out the 3D background on mobile for readability === */
+@media (max-width: 768px) {
+  canvas {
+    opacity: 0.4; /* You can change this to 0.3 or 0.2 if you need it even fainter */
   }
 }
 

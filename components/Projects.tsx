@@ -4,7 +4,7 @@ import ScrollReveal from "./ScrollReveal";
 
 export default function Projects() {
   return (
-    <section id="work" className="border-t border-line py-20 sm:py-28">
+    <section id="work" className=" py-20 sm:py-28">
       <div className="container-content">
         <ScrollReveal>
           <p className="eyebrow mb-4">Work</p>

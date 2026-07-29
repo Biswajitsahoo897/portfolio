@@ -3,11 +3,12 @@
 // Every section on the site pulls its content from here.
 // ─────────────────────────────────────────────────────────────
 
+
 export const site = {
   name: "Biswajit Sahoo",
   role: "Full-Stack Developer",
   tagline:"From ideas to deployment - building digital experiences that make an impact.",
-  location: "Odisha, India",
+  location: "Bhubaneswar, Odisha, India",
   email: "theconqueror198@gmail.com",
   github: "https://github.com/biswajitsahoo897",
   linkedin: "https://www.linkedin.com/in/biswajit-sahoo-b378242b1/",
@@ -35,24 +36,7 @@ export type SkillGroup = {
   items: string[];
 };
 
-export const skills: SkillGroup[] = [
-  {
-    label: "Frontend",
-    items: ["React.js", "Next.js", "HTML5", "CSS3", "Tailwind CSS","Three.js"],
-  },
-  {
-    label: "Backend",
-    items: ["Node.js", "Express.js", "REST APIs"],
-  },
-  {
-    label: "Database",
-    items: ["PostgreSQL", "MySQL", "MongoDB"],
-  },
-  {
-    label: "Infra & Tools",
-    items: ["Docker", "Git", "Github"],
-  },
-];
+
 
 export type Project = {
   title: string;
@@ -131,3 +115,38 @@ export const journey: JourneyStep[] = [
     detail: "Currently studying — scalability, caching, queues, and how real systems fail gracefully.",
   },
 ];
+
+export type Certificate={
+  title:string;
+  issuer:string;
+  year:string;
+  url:string;
+}
+export const certifications:Certificate[]=[
+  {
+    title:"Supervised Machine Learning: Regression and Classification",
+    issuer:"Coursera",
+    year:"2024",
+    url:"https://drive.google.com/file/d/1aohW_Y5RZaP5W7SVGfj3rQJmQ8y6T_bw/view?usp=drive_link"
+  },
+  {
+    title: "GFG 160 - DSA Challenge",
+    issuer: "GeeksforGeeks",
+    year: "2025",
+    url: "https://www.geeksforgeeks.org/certificate/bb94bba5436667f90cbf40040044a04f",
+  },
+  {
+    
+    title:"Smart Coder - Smart Interviews",
+    issuer:"Smart Interviews",
+    year:"2026",
+    url:"https://drive.google.com/file/d/1rq9Xmft1paBrf6ne8waQ8cEwNDlNhFOp/view?usp=drive_link"
+  },
+  {
+    title:"Google Cloud Career Launchpad Generative AI Leader track",
+    issuer:"Google",
+    year:"2026",
+    url:"https://drive.google.com/file/d/1oxNOpSKMnPC7als1PGTbgZ5Uh6Le0n5q/view?usp=drive_link"
+  }
+
+]

@@ -17,10 +17,10 @@ export default function Journey() {
   };
 
   return (
-    <section id="journey" className="border-t border-line py-20 sm:py-28">
+    <section id="journey" className=" py-20 sm:py-28">
       <div className="container-content">
         <ScrollReveal>
-          <p className="eyebrow mb-4">Path</p>
+          <p className="eyebrow mb-4">Journey</p>
           <h2 className="section-heading">How I got here</h2>
         </ScrollReveal>
 

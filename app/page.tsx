@@ -6,6 +6,7 @@ import Projects from "@/components/Projects";
 import Journey from "@/components/Journey";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Certifications from "@/components/Certification";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <TechStack />
         <Projects />
         <Journey />
+        <Certifications/>
         <Contact />
       </main>
       <Footer />
