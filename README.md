@@ -1,159 +1,362 @@
-# Portfolio — Next.js + TypeScript + Tailwind CSS
+# 🌐 Biswajit Sahoo - Portfolio
 
-A minimal, modern, fully responsive developer portfolio with a resume download
-link, SEO metadata, and an animated system-architecture graphic in the hero.
+> **"I build systems that connect, not just pages that load."**
 
----
-
-## 1. Tech stack & dependencies
-
-| Package | Version | What it's for |
-|---|---|---|
-| `next` | 14.2.35 | React framework (App Router), routing, SSG, SEO metadata API |
-| `react` / `react-dom` | 18.3.1 | UI library |
-| `typescript` | 5.6.2 | Type safety |
-| `tailwindcss` | 3.4.13 | Utility-first styling |
-| `framer-motion` | 11.5.6 | Scroll-reveal animations (respects reduced-motion) |
-| `lucide-react` | 0.446.0 | Icon set (menu, resume download, socials, etc.) |
-| `autoprefixer` / `postcss` | — | Required by Tailwind |
-| `eslint` / `eslint-config-next` | — | Linting |
-
-Nothing else is required. No database, no backend, no API keys — it's a
-static site, so it deploys instantly and free on Vercel.
-
-Fonts (Space Grotesk, Inter, JetBrains Mono) are **self-hosted** inside
-`app/fonts/` and loaded with `next/font/local`, so the site makes zero
-requests to Google Fonts — faster load, no layout shift, works offline.
+A modern, responsive, and interactive portfolio website built using **Next.js**, **TypeScript**, **Tailwind CSS**, and **Three.js**. This portfolio showcases my projects, technical skills, achievements, and experience while providing an engaging user experience with smooth animations and responsive design.
 
 ---
 
-## 2. Run it locally
+## 🚀 Live Demo
 
-You need [Node.js 18.18+](https://nodejs.org) installed (20 LTS recommended).
+🔗 **Website:** https://biswajitsahoo-portfolio.vercel.app
+---
 
-```bash
-# 1. unzip and enter the folder
-cd portfolio
+# 📸 Portfolio Preview
 
-# 2. install dependencies
-npm install
+## 🏠 Home Page
 
-# 3. start the dev server
-npm run dev
-```
-
-Open **http://localhost:3000** — you should see the site with hot reload.
-
-Other scripts:
-```bash
-npm run build   # production build (also catches type/lint errors)
-npm run start   # serve the production build locally
-npm run lint    # run ESLint
-```
+![Home](./screenshots/home.png)
 
 ---
 
-## 3. Personalize it
+## 👨‍💻 About Section
 
-Everything you need to change lives in **one file**: `lib/data.ts`.
-
-- `site` — your name, role, tagline, email, GitHub/LinkedIn/Twitter URLs,
-  and `siteUrl` (your final domain, used for SEO tags).
-- `about` — your bio paragraphs.
-- `skills` — your tech stack, grouped (Frontend / Backend / Data / Infra).
-- `projects` — your real projects: title, description, tech tags,
-  live link, repo link.
-- `journey` — your learning timeline (currently ends at "System design").
-
-No other file needs editing for basic personalization.
-
-### Add your resume
-Replace `public/resume.pdf` with your real resume — **keep the exact
-filename** `resume.pdf` and the download buttons (navbar, hero, contact)
-will automatically serve it. If you'd rather use a different filename,
-change `resumeUrl` in `lib/data.ts`.
-
-### Swap the social preview image (optional)
-`public/og-image.png` is what shows up when your link is shared on
-LinkedIn/Twitter/WhatsApp. It's a placeholder — swap it for a real
-1200×630 image whenever you like.
-
-### Favicon
-`public/favicon.svg` is a small generated mark. Replace it with your own
-logo/initials if you want.
+![About](./screenshots/about.png)
 
 ---
 
-## 4. SEO — what's already set up
+## 💼 Projects Section
 
-- Per-page `<title>` template, meta description, keywords via the Next.js
-  Metadata API (`app/layout.tsx`)
-- Open Graph + Twitter Card tags (so shared links look good)
-- JSON-LD `Person` structured data (helps Google understand who you are)
-- Auto-generated `sitemap.xml` and `robots.txt` (`app/sitemap.ts`,
-  `app/robots.ts`)
-- Semantic HTML, alt text on icons, visible focus states, fast static
-  pages (all good ranking signals)
-
-**Before you deploy:** update `siteUrl` in `lib/data.ts` to your real
-domain (or your `*.vercel.app` URL) — this feeds the sitemap and Open
-Graph tags. After deploying, submit your site to
-[Google Search Console](https://search.google.com/search-console) and
-verify + submit `https://yourdomain.com/sitemap.xml` so Google indexes it.
+![Projects](./screenshots/projects.png)
 
 ---
 
-## 5. Deploy to Vercel
+## 🛠 Skills Section
 
-**Option A — GitHub (recommended):**
-1. Push this folder to a new GitHub repo.
-2. Go to [vercel.com/new](https://vercel.com/new), import the repo.
-3. Framework preset auto-detects as Next.js — just click **Deploy**.
-4. Done — you'll get a live `*.vercel.app` URL in ~1 minute.
-
-**Option B — Vercel CLI, no GitHub needed:**
-```bash
-npm install -g vercel
-vercel
-```
-Follow the prompts; it deploys straight from your machine.
-
-After the first deploy, every future `git push` (Option A) auto-redeploys.
-
-To use a custom domain: in the Vercel dashboard → your project →
-**Settings → Domains** → add your domain and follow the DNS instructions.
+![Skills](./screenshots/skills.png)
 
 ---
 
-## 6. Project structure
+## 📞 Contact Section
+
+![Contact](./screenshots/contact.png)
+
+---
+
+# ✨ Features
+
+- 🎨 Modern & Minimal UI
+- 📱 Fully Responsive Design
+- ⚡ Built with Next.js App Router
+- 🌙 Dark Theme
+- 🎥 Smooth Animations using Framer Motion
+- 🌌 Interactive Three.js Background
+- 🖱 Cursor Interaction Effects
+- 💼 Project Showcase
+- 🧠 Skills Section
+- 📄 Resume Download
+- 📬 Contact Section
+- 🚀 Optimized Performance
+- 🔍 SEO Friendly
+- ♿ Accessible Design
+- 🌐 Fast Deployment on Vercel
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+
+## Animation
+
+- Framer Motion
+- Three.js
+- React Three Fiber
+- Drei
+
+## Icons
+
+- Lucide React
+
+## Development Tools
+
+- VS Code
+- Git
+- GitHub
+
+## Deployment
+
+- Vercel
+
+---
+
+# 📂 Project Structure
 
 ```
 portfolio/
+│
 ├── app/
-│   ├── fonts/            self-hosted variable fonts
-│   ├── layout.tsx         root layout, fonts, SEO metadata, JSON-LD
-│   ├── page.tsx           assembles all sections
-│   ├── globals.css        design tokens, base styles
-│   ├── sitemap.ts         auto-generated sitemap.xml
-│   └── robots.ts          auto-generated robots.txt
+│   ├── fonts/
+│   ├── globals.css
+│   ├── layout.tsx
+│   ├── page.tsx
+│   ├── robots.ts
+│   └── sitemap.ts
+|
+│
 ├── components/
-│   ├── Navbar.tsx
-│   ├── Hero.tsx
-│   ├── SchemaGraphic.tsx  animated architecture-diagram hero visual
 │   ├── About.tsx
-│   ├── TechStack.tsx
-│   ├── Projects.tsx
-│   ├── Journey.tsx
+│   ├── Certification.tsx
 │   ├── Contact.tsx
 │   ├── Footer.tsx
-│   └── ScrollReveal.tsx   scroll-in animation wrapper
+│   ├── Hero.tsx
+│   ├── Journey.tsx
+│   ├── Navbar.tsx
+│   ├── Projects.tsx
+│   ├── SchemaGrpahic.tsx
+│   ├── ScrollReveal.tsx
+│   ├── TechStack.tsx
+│   ├── TreeBackground.tsx
+│   └── TypingText.tsx
+|
+│
 ├── lib/
-│   └── data.ts            ← all your content goes here
+│   └── data.ts
+|   
 ├── public/
-│   ├── resume.pdf          ← replace with your real resume
-│   ├── og-image.png        social preview image (placeholder)
-│   └── favicon.svg
-└── package.json
+│   ├── favicon.ico
+│   └── Biswajit_resume.pdf
+│
+├── screenshots/
+│   ├── home.png
+│   ├── about.png
+│   ├── projects.png
+│   ├── skills.png
+│   └── contact.png
+│
+├── package.json
+│
+└── README.md
 ```
 
-Enjoy — and good luck with the portfolio.
+---
+
+# ⚙️ Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/yourusername/portfolio.git
+```
+
+Navigate to the project
+
+```bash
+cd portfolio
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Start the development server
+
+```bash
+npm run dev
+```
+
+Open your browser and visit
+
+```
+http://localhost:3000
+```
+
+---
+
+# 📦 Build for Production
+
+```bash
+npm run build
+```
+
+Start the production server
+
+```bash
+npm start
+```
+
+---
+
+# 🧪 Available Scripts
+
+```bash
+npm run dev
+```
+
+Starts the development server.
+
+```bash
+npm run build
+```
+
+Builds the project for production.
+
+```bash
+npm start
+```
+
+Runs the production build.
+
+```bash
+npm run lint
+```
+
+Runs ESLint.
+
+---
+
+# 📱 Responsive Design
+
+The portfolio is optimized for:
+
+- 💻 Desktop
+- 💼 Laptop
+- 📱 Mobile
+- 📲 Tablet
+
+---
+
+# 🎯 Performance
+
+- ⚡ Optimized Images
+- 🚀 Fast Loading
+- 📦 Code Splitting
+- 🎨 Smooth Animations
+- 🔍 SEO Optimized
+- 📱 Mobile Optimized
+
+---
+
+# 🌟 Highlights
+
+- Interactive Hero Section
+- Animated Components
+- Dynamic Project Cards
+- Clean UI/UX
+- Particle Background
+- Resume Download
+- Contact Form
+- Responsive Navigation
+- Modern Typography
+- Glassmorphism Design
+- Smooth Scrolling
+
+---
+
+# 📖 What I Learned
+
+This project helped me gain practical experience with:
+
+- Next.js App Router
+- React Hooks
+- TypeScript
+- Tailwind CSS
+- Three.js
+- Framer Motion
+- Component-Based Architecture
+- Responsive Web Design
+- Deployment using Vercel
+- Performance Optimization
+- UI/UX Design Principles
+
+---
+
+# 🚀 Future Improvements
+
+- 🌐 Multi-language Support
+- 🌙 Theme Switcher
+- 📝 Blog Section
+- 📊 Visitor Analytics
+- 🤖 AI Chat Assistant
+- 📧 Email Integration
+- 🛠 Admin Dashboard
+- 🎥 Interactive Project Demos
+
+---
+
+# 👨‍💻 About Me
+
+Hi! I'm **Biswajit Sahoo**, a Computer Science undergraduate specializing in **Artificial Intelligence & Machine Learning**.
+
+I'm passionate about building scalable web applications, solving challenging problems, and continuously learning modern technologies.
+
+### Areas of Interest
+
+- Full Stack Development
+- Java Backend Development
+- Artificial Intelligence & Machine Learning
+- DevOps
+- System Design
+- Cloud Computing
+
+---
+
+# 🤝 Connect With Me
+
+### 🌐 Portfolio
+
+https://biswajitsahoo-portfolio.vercel.app/#about
+
+### 💼 LinkedIn
+
+https://www.linkedin.com/in/biswajit-sahoo-b378242b1
+
+### 💻 GitHub
+
+https://github.com/biswajitsahoo897
+
+### 📧 Email
+
+theconqueror198@gmail.com
+
+---
+
+# ⭐ Support
+
+If you like this project, consider giving it a ⭐ on GitHub!
+
+It motivates me to build and share more awesome projects.
+
+
+
+---
+
+# 🙌 Acknowledgements
+
+Special thanks to the amazing open-source community and the creators of:
+
+- Next.js
+- React
+- Tailwind CSS
+- Three.js
+- React Three Fiber
+- Framer Motion
+- Lucide React
+- Vercel
+
+---
+
+<div align="center">
+
+### ⭐ Thanks for Visiting!
+
+Made with ❤️ by **Biswajit Sahoo**
+
+</div>
