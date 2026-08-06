@@ -1,9 +1,3 @@
-// ─────────────────────────────────────────────────────────────
-// EDIT THIS FILE to personalize your portfolio.
-// Every section on the site pulls its content from here.
-// ─────────────────────────────────────────────────────────────
-
-
 export const site = {
   name: "Biswajit Sahoo",
   role: "Full-Stack Developer",
@@ -14,7 +8,7 @@ export const site = {
   linkedin: "https://www.linkedin.com/in/biswajit-sahoo-b378242b1/",
   twitter: "https://x.com/Biswajit5574160",
   resumeUrl: "./Biswajit_resume.pdf",
-  siteUrl: "https://yourdomain.com", // update after you get a domain / vercel URL
+  siteUrl: "https://biswajitsahoo-portfolio.vercel.app/",
   description:
     "Portfolio Biswajit sahoo, a full-stack developer working across React, Next.js, Node.js and relational and document databases, currently studying distributed system design.",
 };
